@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt File</title>
+</head>
+<body>
+<h2>Encrypt File</h2>
+
+<form method="post" action="/api/files/encrypt" enctype="multipart/form-data">
+    <label for="file">Select File to Encrypt:</label>
+    <input type="file" name="file" id="file" required />
+
+    <label for="password">Enter Password:</label>
+    <input type="password" name="password" id="password" required />
+
+    <label for="outputFileName">Enter Output File Name (optional):</label>
+    <input type="text" name="outputFileName" id="outputFileName" />
+
+    <button type="submit">Encrypt File</button>
+</form>
+</body>
+</html>

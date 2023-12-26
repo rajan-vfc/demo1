@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrypt File</title>
+</head>
+<body>
+<h2>Decrypt File</h2>
+
+<form method="post" action="/api/files/decrypt" enctype="multipart/form-data">
+    <label for="file">Select File to Decrypt:</label>
+    <input type="file" name="file" id="file" required />
+
+    <label for="password">Enter Password:</label>
+    <input type="password" name="password" id="password" required />
+
+    <label for="outputFileName">Enter Output File Name (optional):</label>
+    <input type="text" name="outputFileName" id="outputFileName" />
+
+    <button type="submit">Decrypt File</button>
+</form>
+</body>
+</html>
